@@ -3,6 +3,9 @@ This is a SPA project to show the use of github API to seach repositories based 
 
 ### Description
 This is a Ruby on Rails project, witch uses webpack to handle frontend, the javascript framework used is Vuejs.
+The requests come from frontend into the backend, by the `Api::V1::SearchController`(`GET /api/v1/search?querystring`), the search controller calls a service
+that handles the request on github API. The response is parsed to JSON and send back to the frontend, where the data is showed
+in a component to the user.
 
 ## Libs:
 - Rspec -> Ruby lib to handle unit tests
