@@ -13,15 +13,15 @@ This is a Ruby on Rails project, witch uses webpack to handle frontend, the java
 - PulseLoader -> Javascript component lib used to create the loader in frontend
 
 ## Steps to run locally
-1 - Install ruby with rvm, follow the steps: https://rvm.io/rvm/install
-2 - Clone the project in your computer
-3 - Run `gem install bundle`
-4 - Run `bundle install`
-5 - Run `yarn install` -> you will need the nodejs version 14 or higher, and the lastest version of `yarn`
-6 - Run `rails db:create db:migrate`
-7 - Run `rails s`
-8 - In your browser go to url: `localhost:3000`
-9 - Type some term, change the sorts and click `search`
+1. Install ruby with rvm, follow the steps: https://rvm.io/rvm/install
+2. Clone the project in your computer
+3. Run `gem install bundle`
+4. Run `bundle install`
+5. Run `yarn install` -> you will need the nodejs version 14 or higher, and the lastest version of `yarn`
+6. Run `rails db:create db:migrate`
+7. Run `rails s`
+8. In your browser go to url: `localhost:3000`
+9. Type some term, change the sorts and click `search`
 
 
 ## Future Improvements
