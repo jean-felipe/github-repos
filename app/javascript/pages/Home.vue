@@ -77,7 +77,7 @@ export default {
 
   data() {
     return {
-      term: 'react',
+      term: '',
       sort: 'Stars',
       language: 'Ruby',
       perPage: '5',
