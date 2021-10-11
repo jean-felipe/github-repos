@@ -5,6 +5,14 @@ require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
+require 'webmock/rspec'
+require 'vcr'
+
+VCR.configure do |config|
+  config.hook_into :webmock
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.allow_http_connections_when_no_cassette = true
+end
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
